@@ -1,0 +1,61 @@
+:root {
+    --lkt-iconic-box-align-items: center;
+    --lkt-iconic-box-justify-content: center;
+    --lkt-iconic-box-flex-direction: row;
+
+    /** Font */
+    --lkt-iconic-box-font-family: system-ui, Helvetica;
+    --lkt-iconic-box-font-family-label: system-ui, Helvetica;
+    --lkt-iconic-box-font-size: 17px;
+    --lkt-iconic-box-font-size-label: 17px;
+    --lkt-iconic-box-font-size-icon: 20px;
+    --lkt-iconic-box-font-weight: 400;
+    --lkt-iconic-box-font-weight-label: 400;
+    --lkt-iconic-box-line-height: 1;
+    --lkt-iconic-box-line-height-label: 1;
+    --lkt-iconic-box-line-height-icon: 1;
+    --lkt-iconic-box-text-align: left;
+    --lkt-iconic-box-text-align-label: left;
+
+    /** Sizing */
+    --lkt-iconic-box-width: 100%;
+    --lkt-iconic-box-min-width: 150px;
+    --lkt-iconic-box-min-height: auto;
+    --lkt-iconic-box-padding: 15px;
+    --lkt-iconic-box-padding-content: 15px;
+    --lkt-iconic-box-gap: 15px;
+    --lkt-iconic-box-gap-content: 15px;
+    --lkt-iconic-box-margin-label: 0;
+    --lkt-iconic-box-width-art: 320px;
+    --lkt-iconic-box-height-art: 320px;
+    --lkt-iconic-box-width-img: auto;
+    --lkt-iconic-box-max-width-img: 100%;
+    --lkt-iconic-box-height-img: auto;
+    --lkt-iconic-box-max-height-img: 100%;
+
+    /** Border */
+    --lkt-iconic-box-border-radius: 5px;
+    --lkt-iconic-box-border-radius-art: 100%;
+    --lkt-iconic-box-border-width: 1px;
+    --lkt-iconic-box-border-width-art: 1px;
+    --lkt-iconic-box-border-style: solid;
+    --lkt-iconic-box-border-style-art: solid;
+
+    /** Colors */
+    --lkt-iconic-box-color: #ffffff;
+    --lkt-iconic-box-color-icon: #007ebc;
+    --lkt-iconic-box-bg: #007ebc;
+    --lkt-iconic-box-bg-art: transparent;
+    --lkt-iconic-box-border-color: #ddd;
+    --lkt-iconic-box-border-color-art: #ddd;
+
+    /** Effects */
+    --lkt-iconic-box-shadow: none;
+    --lkt-iconic-box-transition: all linear 100ms;
+
+    /** State: hover */
+    --lkt-iconic-box-color-hover: #ffffff;
+    --lkt-iconic-box-bg-hover: #007ebc;
+    --lkt-iconic-box-border-color-hover: #ddd;
+
+}
