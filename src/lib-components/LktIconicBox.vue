@@ -29,18 +29,22 @@ const computedLabelTag = computed(() => {
 </script>
 
 <template>
-    <div class="lkt-iconic-box">
-        <div class="lkt-iconic-box-art" v-if="renderArtBox">
-            <i v-if="icon" :class="icon" class="lkt-iconic-box-icon"/>
-            <img v-if="imgSrc" :src="imgSrc" :alt="label" class="lkt-iconic-box-img"/>
-        </div>
-        <div class="lkt-iconic-box-content">
-            <component :is="computedLabelTag" class="lkt-iconic-box-label">
-                {{ label }}
-            </component>
+    <div class="lkt-iconic-box-container">
+        <div class="lkt-iconic-box">
+            <div class="lkt-iconic-box-art" v-if="renderArtBox">
+                <i v-if="icon" :class="icon" class="lkt-iconic-box-icon"/>
+                <img v-if="imgSrc" :src="imgSrc" :alt="label" class="lkt-iconic-box-img"/>
+            </div>
+            <div class="lkt-iconic-box-content">
+                <div class="lkt-iconic-box-label-container">
+                    <component :is="computedLabelTag" class="lkt-iconic-box-label">
+                        {{ label }}
+                    </component>
+                </div>
 
-            <div v-if="slots.default" class="lkt-iconic-box-extra">
-                <slot/>
+                <div v-if="slots.default" class="lkt-iconic-box-extra">
+                    <slot/>
+                </div>
             </div>
         </div>
     </div>
