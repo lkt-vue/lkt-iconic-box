@@ -1,27 +1,37 @@
 declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     label?: string | undefined;
     labelTag?: string | undefined;
+    subLabel?: string | undefined;
+    subLabelTag?: string | undefined;
     icon?: string | undefined;
     imgSrc?: string | undefined;
 }>, {
     label: string;
     labelTag: string;
+    subLabel: string;
+    subLabelTag: string;
     icon: string;
     imgSrc: string;
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     label?: string | undefined;
     labelTag?: string | undefined;
+    subLabel?: string | undefined;
+    subLabelTag?: string | undefined;
     icon?: string | undefined;
     imgSrc?: string | undefined;
 }>, {
     label: string;
     labelTag: string;
+    subLabel: string;
+    subLabelTag: string;
     icon: string;
     imgSrc: string;
 }>>>, {
     label: string;
     icon: string;
     labelTag: string;
+    subLabel: string;
+    subLabelTag: string;
     imgSrc: string;
 }, {}>, {
     default?(_: {}): any;
