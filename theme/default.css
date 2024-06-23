@@ -3,28 +3,44 @@
     --lkt-iconic-box-align-items-art: center;
     --lkt-iconic-box-align-items-content: center;
     --lkt-iconic-box-align-items-label-container: center;
+    --lkt-iconic-box-align-items-sub-label-container: center;
+    --lkt-iconic-box-align-items-extra-label-container: center;
     --lkt-iconic-box-justify-content: center;
     --lkt-iconic-box-justify-content-art: center;
     --lkt-iconic-box-justify-content-content: center;
     --lkt-iconic-box-justify-content-label-container: center;
+    --lkt-iconic-box-justify-content-sub-label-container: center;
+    --lkt-iconic-box-justify-content-extra-label-container: center;
     --lkt-iconic-box-flex-direction: row;
     --lkt-iconic-box-flex-direction-art: column;
     --lkt-iconic-box-flex-direction-content: column;
     --lkt-iconic-box-flex-direction-label-container: column;
+    --lkt-iconic-box-flex-direction-sub-label-container: column;
+    --lkt-iconic-box-flex-direction-extra-label-container: column;
 
     /** Font */
     --lkt-iconic-box-font-family: system-ui, Helvetica;
     --lkt-iconic-box-font-family-label: system-ui, Helvetica;
+    --lkt-iconic-box-font-family-sub-label: system-ui, Helvetica;
+    --lkt-iconic-box-font-family-extra-label: system-ui, Helvetica;
     --lkt-iconic-box-font-size: 17px;
     --lkt-iconic-box-font-size-label: 17px;
+    --lkt-iconic-box-font-size-sub-label: 17px;
+    --lkt-iconic-box-font-size-extra-label: 17px;
     --lkt-iconic-box-font-size-icon: 20px;
     --lkt-iconic-box-font-weight: 400;
     --lkt-iconic-box-font-weight-label: 400;
+    --lkt-iconic-box-font-weight-sub-label: 400;
+    --lkt-iconic-box-font-weight-extra-label: 400;
     --lkt-iconic-box-line-height: 1;
     --lkt-iconic-box-line-height-label: 1;
+    --lkt-iconic-box-line-height-sub-label: 1;
+    --lkt-iconic-box-line-height-extra-label: 1;
     --lkt-iconic-box-line-height-icon: 1;
     --lkt-iconic-box-text-align: left;
     --lkt-iconic-box-text-align-label: left;
+    --lkt-iconic-box-text-align-sub-label: left;
+    --lkt-iconic-box-text-align-extra-label: left;
 
     /** Sizing */
     --lkt-iconic-box-width: 100%;
@@ -35,11 +51,17 @@
     --lkt-iconic-box-gap: 15px;
     --lkt-iconic-box-gap-content: 15px;
     --lkt-iconic-box-margin-label: 0;
+    --lkt-iconic-box-margin-sub-label: 0;
+    --lkt-iconic-box-margin-extra-label: 0;
     --lkt-iconic-box-margin-img: 0;
     --lkt-iconic-box-width-content: 100%;
     --lkt-iconic-box-width-art: 320px;
+    --lkt-iconic-box-min-width-art: 0;
     --lkt-iconic-box-width-label-container: 100%;
+    --lkt-iconic-box-width-sub-label-container: 100%;
+    --lkt-iconic-box-width-extra-label-container: 100%;
     --lkt-iconic-box-height-art: 320px;
+    --lkt-iconic-box-min-height-art: 0;
     --lkt-iconic-box-width-img: auto;
     --lkt-iconic-box-max-width-img: 100%;
     --lkt-iconic-box-height-img: auto;

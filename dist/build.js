@@ -1,8 +1,8 @@
-import { defineComponent as g, useSlots as _, computed as a, openBlock as o, createElementBlock as t, createElementVNode as i, normalizeClass as v, createCommentVNode as c, createBlock as s, resolveDynamicComponent as r, withCtx as u, createTextVNode as b, toDisplayString as d, unref as x, renderSlot as h } from "vue";
-const L = { class: "lkt-iconic-box-container" }, T = { class: "lkt-iconic-box" }, y = {
+import { defineComponent as g, useSlots as L, computed as i, openBlock as t, createElementBlock as a, createElementVNode as d, normalizeClass as _, createCommentVNode as o, createBlock as n, resolveDynamicComponent as s, withCtx as r, createTextVNode as u, toDisplayString as b, unref as v, renderSlot as T } from "vue";
+const h = { class: "lkt-iconic-box-container" }, y = { class: "lkt-iconic-box" }, S = {
   key: 0,
   class: "lkt-iconic-box-art"
-}, S = ["src", "alt"], B = { class: "lkt-iconic-box-content" }, C = {
+}, B = ["src", "alt"], C = { class: "lkt-iconic-box-content" }, E = {
   key: 0,
   class: "lkt-iconic-box-label-container"
 }, N = {
@@ -10,62 +10,75 @@ const L = { class: "lkt-iconic-box-container" }, T = { class: "lkt-iconic-box" }
   class: "lkt-iconic-box-sub-label-container"
 }, V = {
   key: 2,
+  class: "lkt-iconic-box-extra-label-container"
+}, D = {
+  key: 3,
   class: "lkt-iconic-box-extra"
-}, D = /* @__PURE__ */ g({
+}, I = /* @__PURE__ */ g({
   __name: "LktIconicBox",
   props: {
     label: { default: "" },
     labelTag: { default: "p" },
     subLabel: { default: "" },
     subLabelTag: { default: "p" },
+    extraLabel: { default: "" },
+    extraLabelTag: { default: "p" },
     icon: { default: "" },
     imgSrc: { default: "" }
   },
-  setup(n) {
-    const l = n, k = _(), m = a(() => l.labelTag ? l.labelTag : "p"), f = a(() => l.subLabelTag ? l.subLabelTag : "p"), p = a(() => l.icon !== "" || l.imgSrc !== "");
-    return (e, E) => (o(), t("div", L, [
-      i("div", T, [
-        p.value ? (o(), t("div", y, [
-          e.icon ? (o(), t("i", {
+  setup(c) {
+    const l = c, k = L(), f = i(() => l.labelTag ? l.labelTag : "p"), m = i(() => l.subLabelTag ? l.subLabelTag : "p"), p = i(() => l.extraLabelTag ? l.extraLabelTag : "p"), x = i(() => l.icon !== "" || l.imgSrc !== "");
+    return (e, w) => (t(), a("div", h, [
+      d("div", y, [
+        x.value ? (t(), a("div", S, [
+          e.icon ? (t(), a("i", {
             key: 0,
-            class: v([e.icon, "lkt-iconic-box-icon"])
-          }, null, 2)) : c("", !0),
-          e.imgSrc ? (o(), t("img", {
+            class: _([e.icon, "lkt-iconic-box-icon"])
+          }, null, 2)) : o("", !0),
+          e.imgSrc ? (t(), a("img", {
             key: 1,
             src: e.imgSrc,
             alt: e.label,
             class: "lkt-iconic-box-img"
-          }, null, 8, S)) : c("", !0)
-        ])) : c("", !0),
-        i("div", B, [
-          e.label ? (o(), t("div", C, [
-            (o(), s(r(m.value), { class: "lkt-iconic-box-label" }, {
-              default: u(() => [
-                b(d(e.label), 1)
+          }, null, 8, B)) : o("", !0)
+        ])) : o("", !0),
+        d("div", C, [
+          e.label ? (t(), a("div", E, [
+            (t(), n(s(f.value), { class: "lkt-iconic-box-label" }, {
+              default: r(() => [
+                u(b(e.label), 1)
               ]),
               _: 1
             }))
-          ])) : c("", !0),
-          e.subLabel ? (o(), t("div", N, [
-            (o(), s(r(f.value), { class: "lkt-iconic-box-sub-label" }, {
-              default: u(() => [
-                b(d(e.label), 1)
+          ])) : o("", !0),
+          e.subLabel ? (t(), a("div", N, [
+            (t(), n(s(m.value), { class: "lkt-iconic-box-sub-label" }, {
+              default: r(() => [
+                u(b(e.subLabel), 1)
               ]),
               _: 1
             }))
-          ])) : c("", !0),
-          x(k).default ? (o(), t("div", V, [
-            h(e.$slots, "default")
-          ])) : c("", !0)
+          ])) : o("", !0),
+          e.extraLabel ? (t(), a("div", V, [
+            (t(), n(s(p.value), { class: "lkt-iconic-box-extra-label" }, {
+              default: r(() => [
+                u(b(e.extraLabel), 1)
+              ]),
+              _: 1
+            }))
+          ])) : o("", !0),
+          v(k).default ? (t(), a("div", D, [
+            T(e.$slots, "default")
+          ])) : o("", !0)
         ])
       ])
     ]));
   }
-}), w = {
-  install: (n) => {
-    n.component("lkt-iconic-box") === void 0 && n.component("lkt-iconic-box", D);
+}), A = {
+  install: (c) => {
+    c.component("lkt-iconic-box") === void 0 && c.component("lkt-iconic-box", I);
   }
 };
 export {
-  w as default
+  A as default
 };

@@ -7,6 +7,8 @@ const props = withDefaults(defineProps<{
     labelTag?: string,
     subLabel?: string,
     subLabelTag?: string,
+    extraLabel?: string,
+    extraLabelTag?: string,
     icon?: string,
     imgSrc?: string,
 }>(), {
@@ -14,6 +16,8 @@ const props = withDefaults(defineProps<{
     labelTag: 'p',
     subLabel: '',
     subLabelTag: 'p',
+    extraLabel: '',
+    extraLabelTag: 'p',
     icon: '',
     imgSrc: '',
 });
@@ -27,6 +31,10 @@ const computedLabelTag = computed(() => {
     computedSubLabelTag = computed(() => {
         if (!props.subLabelTag) return 'p';
         return props.subLabelTag;
+    }),
+    computedExtraLabelTag = computed(() => {
+        if (!props.extraLabelTag) return 'p';
+        return props.extraLabelTag;
     }),
     renderArtBox = computed(() => {
         if (props.icon !== '') return true;
@@ -51,7 +59,12 @@ const computedLabelTag = computed(() => {
                 </div>
                 <div v-if="subLabel" class="lkt-iconic-box-sub-label-container">
                     <component :is="computedSubLabelTag" class="lkt-iconic-box-sub-label">
-                        {{ label }}
+                        {{ subLabel }}
+                    </component>
+                </div>
+                <div v-if="extraLabel" class="lkt-iconic-box-extra-label-container">
+                    <component :is="computedExtraLabelTag" class="lkt-iconic-box-extra-label">
+                        {{ extraLabel }}
                     </component>
                 </div>
 

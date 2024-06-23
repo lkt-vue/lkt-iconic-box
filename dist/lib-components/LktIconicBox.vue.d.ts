@@ -3,6 +3,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     labelTag?: string | undefined;
     subLabel?: string | undefined;
     subLabelTag?: string | undefined;
+    extraLabel?: string | undefined;
+    extraLabelTag?: string | undefined;
     icon?: string | undefined;
     imgSrc?: string | undefined;
 }>, {
@@ -10,6 +12,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     labelTag: string;
     subLabel: string;
     subLabelTag: string;
+    extraLabel: string;
+    extraLabelTag: string;
     icon: string;
     imgSrc: string;
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
@@ -17,6 +21,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     labelTag?: string | undefined;
     subLabel?: string | undefined;
     subLabelTag?: string | undefined;
+    extraLabel?: string | undefined;
+    extraLabelTag?: string | undefined;
     icon?: string | undefined;
     imgSrc?: string | undefined;
 }>, {
@@ -24,6 +30,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     labelTag: string;
     subLabel: string;
     subLabelTag: string;
+    extraLabel: string;
+    extraLabelTag: string;
     icon: string;
     imgSrc: string;
 }>>>, {
@@ -32,6 +40,8 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     labelTag: string;
     subLabel: string;
     subLabelTag: string;
+    extraLabel: string;
+    extraLabelTag: string;
     imgSrc: string;
 }, {}>, {
     default?(_: {}): any;
