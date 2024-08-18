@@ -1,6 +1,7 @@
 declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     label?: string | undefined;
     labelTag?: string | undefined;
+    labelContainerTag?: string | undefined;
     subLabel?: string | undefined;
     subLabelTag?: string | undefined;
     extraLabel?: string | undefined;
@@ -10,6 +11,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }>, {
     label: string;
     labelTag: string;
+    labelContainerTag: string;
     subLabel: string;
     subLabelTag: string;
     extraLabel: string;
@@ -19,6 +21,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     label?: string | undefined;
     labelTag?: string | undefined;
+    labelContainerTag?: string | undefined;
     subLabel?: string | undefined;
     subLabelTag?: string | undefined;
     extraLabel?: string | undefined;
@@ -28,6 +31,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
 }>, {
     label: string;
     labelTag: string;
+    labelContainerTag: string;
     subLabel: string;
     subLabelTag: string;
     extraLabel: string;
@@ -38,6 +42,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     label: string;
     icon: string;
     labelTag: string;
+    labelContainerTag: string;
     subLabel: string;
     subLabelTag: string;
     extraLabel: string;

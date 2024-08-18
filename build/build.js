@@ -1,11 +1,8 @@
-import { defineComponent as g, useSlots as L, computed as i, openBlock as t, createElementBlock as a, createElementVNode as d, normalizeClass as _, createCommentVNode as o, createBlock as n, resolveDynamicComponent as s, withCtx as r, createTextVNode as u, toDisplayString as b, unref as v, renderSlot as T } from "vue";
-const h = { class: "lkt-iconic-box-container" }, y = { class: "lkt-iconic-box" }, S = {
+import { defineComponent as L, useSlots as T, computed as n, openBlock as l, createElementBlock as a, createElementVNode as d, normalizeClass as v, createCommentVNode as o, createBlock as c, resolveDynamicComponent as r, withCtx as s, createTextVNode as u, toDisplayString as b, unref as _, renderSlot as h } from "vue";
+const y = { class: "lkt-iconic-box-container" }, C = { class: "lkt-iconic-box" }, S = {
   key: 0,
   class: "lkt-iconic-box-art"
-}, B = ["src", "alt"], C = { class: "lkt-iconic-box-content" }, E = {
-  key: 0,
-  class: "lkt-iconic-box-label-container"
-}, N = {
+}, B = ["src", "alt"], E = { class: "lkt-iconic-box-content" }, N = {
   key: 1,
   class: "lkt-iconic-box-sub-label-container"
 }, V = {
@@ -14,11 +11,12 @@ const h = { class: "lkt-iconic-box-container" }, y = { class: "lkt-iconic-box" }
 }, D = {
   key: 3,
   class: "lkt-iconic-box-extra"
-}, I = /* @__PURE__ */ g({
+}, I = /* @__PURE__ */ L({
   __name: "LktIconicBox",
   props: {
     label: { default: "" },
     labelTag: { default: "p" },
+    labelContainerTag: { default: "div" },
     subLabel: { default: "" },
     subLabelTag: { default: "p" },
     extraLabel: { default: "" },
@@ -26,57 +24,63 @@ const h = { class: "lkt-iconic-box-container" }, y = { class: "lkt-iconic-box" }
     icon: { default: "" },
     imgSrc: { default: "" }
   },
-  setup(c) {
-    const l = c, k = L(), f = i(() => l.labelTag ? l.labelTag : "p"), m = i(() => l.subLabelTag ? l.subLabelTag : "p"), p = i(() => l.extraLabelTag ? l.extraLabelTag : "p"), x = i(() => l.icon !== "" || l.imgSrc !== "");
-    return (e, w) => (t(), a("div", h, [
-      d("div", y, [
-        x.value ? (t(), a("div", S, [
-          e.icon ? (t(), a("i", {
+  setup(i) {
+    const t = i, f = T(), k = n(() => t.labelTag ? t.labelTag : "p"), m = n(() => t.subLabelTag ? t.subLabelTag : "p"), g = n(() => t.extraLabelTag ? t.extraLabelTag : "p"), p = n(() => t.labelContainerTag ? t.labelContainerTag : "div"), x = n(() => t.icon !== "" || t.imgSrc !== "");
+    return (e, w) => (l(), a("div", y, [
+      d("div", C, [
+        x.value ? (l(), a("div", S, [
+          e.icon ? (l(), a("i", {
             key: 0,
-            class: _([e.icon, "lkt-iconic-box-icon"])
+            class: v([e.icon, "lkt-iconic-box-icon"])
           }, null, 2)) : o("", !0),
-          e.imgSrc ? (t(), a("img", {
+          e.imgSrc ? (l(), a("img", {
             key: 1,
             src: e.imgSrc,
             alt: e.label,
             class: "lkt-iconic-box-img"
           }, null, 8, B)) : o("", !0)
         ])) : o("", !0),
-        d("div", C, [
-          e.label ? (t(), a("div", E, [
-            (t(), n(s(f.value), { class: "lkt-iconic-box-label" }, {
-              default: r(() => [
-                u(b(e.label), 1)
-              ]),
-              _: 1
-            }))
-          ])) : o("", !0),
-          e.subLabel ? (t(), a("div", N, [
-            (t(), n(s(m.value), { class: "lkt-iconic-box-sub-label" }, {
-              default: r(() => [
+        d("div", E, [
+          e.label ? (l(), c(r(p.value), {
+            key: 0,
+            class: "lkt-iconic-box-label-container"
+          }, {
+            default: s(() => [
+              (l(), c(r(k.value), { class: "lkt-iconic-box-label" }, {
+                default: s(() => [
+                  u(b(e.label), 1)
+                ]),
+                _: 1
+              }))
+            ]),
+            _: 1
+          })) : o("", !0),
+          e.subLabel ? (l(), a("div", N, [
+            (l(), c(r(m.value), { class: "lkt-iconic-box-sub-label" }, {
+              default: s(() => [
                 u(b(e.subLabel), 1)
               ]),
               _: 1
             }))
           ])) : o("", !0),
-          e.extraLabel ? (t(), a("div", V, [
-            (t(), n(s(p.value), { class: "lkt-iconic-box-extra-label" }, {
-              default: r(() => [
+          e.extraLabel ? (l(), a("div", V, [
+            (l(), c(r(g.value), { class: "lkt-iconic-box-extra-label" }, {
+              default: s(() => [
                 u(b(e.extraLabel), 1)
               ]),
               _: 1
             }))
           ])) : o("", !0),
-          v(k).default ? (t(), a("div", D, [
-            T(e.$slots, "default")
+          _(f).default ? (l(), a("div", D, [
+            h(e.$slots, "default")
           ])) : o("", !0)
         ])
       ])
     ]));
   }
 }), A = {
-  install: (c) => {
-    c.component("lkt-iconic-box") === void 0 && c.component("lkt-iconic-box", I);
+  install: (i) => {
+    i.component("lkt-iconic-box") === void 0 && i.component("lkt-iconic-box", I);
   }
 };
 export {

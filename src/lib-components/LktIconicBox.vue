@@ -5,6 +5,7 @@ import {computed, useSlots} from "vue";
 const props = withDefaults(defineProps<{
     label?: string,
     labelTag?: string,
+    labelContainerTag?: string,
     subLabel?: string,
     subLabelTag?: string,
     extraLabel?: string,
@@ -14,6 +15,7 @@ const props = withDefaults(defineProps<{
 }>(), {
     label: '',
     labelTag: 'p',
+    labelContainerTag: 'div',
     subLabel: '',
     subLabelTag: 'p',
     extraLabel: '',
@@ -36,6 +38,10 @@ const computedLabelTag = computed(() => {
         if (!props.extraLabelTag) return 'p';
         return props.extraLabelTag;
     }),
+    computedLabelContainerTag = computed(() => {
+        if (!props.labelContainerTag) return 'div';
+        return props.labelContainerTag;
+    }),
     renderArtBox = computed(() => {
         if (props.icon !== '') return true;
         if (props.imgSrc !== '') return true;
@@ -52,11 +58,11 @@ const computedLabelTag = computed(() => {
                 <img v-if="imgSrc" :src="imgSrc" :alt="label" class="lkt-iconic-box-img"/>
             </div>
             <div class="lkt-iconic-box-content">
-                <div v-if="label" class="lkt-iconic-box-label-container">
+                <component :is="computedLabelContainerTag" v-if="label" class="lkt-iconic-box-label-container">
                     <component :is="computedLabelTag" class="lkt-iconic-box-label">
                         {{ label }}
                     </component>
-                </div>
+                </component>
                 <div v-if="subLabel" class="lkt-iconic-box-sub-label-container">
                     <component :is="computedSubLabelTag" class="lkt-iconic-box-sub-label">
                         {{ subLabel }}
